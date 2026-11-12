@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cyber: #020617;
+  --bg-surface: #060D1E;
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --python-blue: #38BDF8;
+  --python-gold: #FBBF24;
+  --fitness-emerald: #10B981;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #020617;
+  color: #F8FAFC;
+}
+
+body {
+  background: 
+    radial-gradient(circle at 10% 8%, rgba(56, 189, 248, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 90% 15%, rgba(251, 191, 36, 0.10) 0%, transparent 40%),
+    radial-gradient(circle at 50% 55%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 90%, rgba(56, 189, 248, 0.09) 0%, transparent 45%),
+    linear-gradient(180deg, #020617 0%, #060D1E 50%, #030712 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* Background Cyber Grid Overlay */
+.cyber-grid-overlay {
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Modern Frosted Journal Shell */
+.journal-page {
+  background: linear-gradient(145deg, rgba(10, 21, 46, 0.94) 0%, rgba(6, 13, 30, 0.98) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  box-shadow:
+    0 30px 80px -15px rgba(0, 0, 0, 0.9),
+    inset 0 1px 0 0 rgba(248, 250, 252, 0.15),
+    inset 16px 0 30px -12px rgba(2, 6, 23, 0.8);
+  backdrop-filter: blur(18px);
+}
+
+/* Python High-Tech Glass Panel */
+.glass-panel {
+  background: rgba(10, 21, 46, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel:hover {
+  border-color: rgba(56, 189, 248, 0.3);
+  box-shadow: 0 12px 30px -10px rgba(56, 189, 248, 0.15);
+}
+
+/* Python Golden Accent Card */
+.glass-gold-panel {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  transition: all 0.3s ease;
+}
+.glass-gold-panel:hover {
+  border-color: rgba(251, 191, 36, 0.45);
+  box-shadow: 0 12px 30px -10px rgba(251, 191, 36, 0.15);
+}
+
+/* Calorie Fitness Emerald Accent Card */
+.glass-emerald-panel {
+  background: rgba(6, 25, 25, 0.7);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+/* 3D and Card Helpers */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(56, 189, 248, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
