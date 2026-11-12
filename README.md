@@ -2,14 +2,6 @@
 
 <div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Google_Gemini-Vision_API-8E75B2?style=for-the-badge&logo=google&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
 ### An Interactive Academic Digital Research Journal & Engineering Compendium
 
 **Course**: CS13007 – Advanced Python Programming  
@@ -19,11 +11,6 @@
 **Faculty Mentor**: Dr. Sharmila Banu K  
 **Semester**: Fall Semester 2026–27  
 
-[Live Application](https://caltracker-fit.vercel.app/) • [Project Presentation](https://docs.google.com/presentation/d/1tWngwweqTkoXZwwsFks4ewspE9Y7OK58/edit?rtpof=true&sd=true) • [Demo Video](https://drive.google.com/file/d/1ZDnQPVN33vRMqsUcZFXFxaTkgFgbg99G/view) • [Audio Recording](https://drive.google.com/file/d/1qrQ_rvdgNQQB2ehmpCnlmdywI27ewF6U/view) • [Medium Blog](https://medium.com/@leoshiji/my-first-encounter-with-python-022495d85126)
-
-<br/>
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLeoShijiKozhikottu%2FPython_Portfolio)
 
 </div>
 
@@ -35,20 +22,6 @@ This repository hosts the complete source code for the **Advanced Python Program
 
 The featured core project is **CalTracker**, an AI-powered calorie and macronutrient tracking web application leveraging **Google Gemini Vision** multimodal API to remove the manual friction of conventional dietary logging.
 
----
-
-## 🚀 Authenticated Deliverables & Live Links
-
-| Deliverable | Description | Link |
-| :--- | :--- | :--- |
-| **🌐 Portfolio Website (Vercel)** | Digital Research Compendium & Academic Portfolio | [Live on Vercel](https://caltracker-fit.vercel.app/) |
-| **⚡ Featured Project (CalTracker)** | CalTracker: Multimodal AI Gym & Diet Tracker | [caltracker-fit.vercel.app](https://caltracker-fit.vercel.app/) |
-| **📊 Project Presentation** | Architectural Slide Deck (`CalTracker_Workflow_with_Files.pptx`) | [Google Slides](https://docs.google.com/presentation/d/1tWngwweqTkoXZwwsFks4ewspE9Y7OK58/edit?rtpof=true&sd=true) |
-| **🎥 Demo Video Walkthrough** | Full Application Screen Recording (`Screen Recording 2026-11-02 110715.mp4`) | [Google Drive Video](https://drive.google.com/file/d/1ZDnQPVN33vRMqsUcZFXFxaTkgFgbg99G/view) |
-| **🎙️ Python Audio Recording** | Business Thesis & Product Strategy Recording (`New recording 12.mp3`) | [Google Drive Audio](https://drive.google.com/file/d/1qrQ_rvdgNQQB2ehmpCnlmdywI27ewF6U/view) |
-| **📝 Medium Publication** | *"My First Encounter with Python: It's been 4 years I have been studying..."* | [Medium Editorial](https://medium.com/@leoshiji/my-first-encounter-with-python-022495d85126) |
-
----
 
 ## 📖 Compendium Chapters & Course Modules
 
@@ -154,47 +127,7 @@ The portfolio is structured into 8 modular chapters:
    npm run start
    ```
 
----
 
-## ☁️ Vercel Deployment & Custom Domain Configuration
-
-### Linking Vercel with GitHub for Continuous Deployment (CI/CD)
-1. Go to [vercel.com](https://vercel.com/) and sign in with your GitHub account.
-2. Click **"Add New..."** &rarr; **"Project"**.
-3. Under **Import Git Repository**, find `LeoShijiKozhikottu/Python_Portfolio` and click **Import**.
-4. Leave settings at default (Framework Preset: `Next.js`, Root: `./`) and click **Deploy**.
-5. Once imported, every future `git push origin main` will automatically trigger a new production build and deploy on Vercel without manual intervention.
-
-### How to Change the Domain Name in Vercel
-
-#### Option 1: Free Custom `.vercel.app` Subdomain
-1. Open your project on the [Vercel Dashboard](https://vercel.com/dashboard).
-2. Go to **Settings** &rarr; **Domains** (in the left sidebar).
-3. Under the existing domain (e.g. `python-portfolio-xxx.vercel.app`), click **Edit** (three dots &rarr; Edit).
-4. Enter your preferred subdomain, for example:
-   * `leoshiji-python-portfolio.vercel.app`
-   * `python-portfolio-23mic0082.vercel.app`
-5. Click **Save**. Vercel will instantly provision the new address with automatic SSL certificate!
-
-#### Option 2: Custom Domain (e.g., `leoshiji.com` or `portfolio.yourdomain.com`)
-1. Go to **Settings** &rarr; **Domains**.
-2. Type your custom domain and click **Add**.
-3. Choose whether to redirect `www` or use apex.
-4. Vercel will display the exact DNS records to add:
-   * **A Record**: `76.76.21.21`
-   * **CNAME Record**: `cname.vercel-dns.com`
-5. Add these records in your domain registrar (GoDaddy, Namecheap, Cloudflare, etc.). Once DNS propagates (1-10 mins), Vercel automatically activates SSL.
-
-### Displaying the Vercel URL on Your GitHub Repository
-1. Go to your GitHub repository: [github.com/LeoShijiKozhikottu/Python_Portfolio](https://github.com/LeoShijiKozhikottu/Python_Portfolio).
-2. On the right sidebar, find the **About** section and click the ⚙️ **gear icon** (Edit repository details).
-3. Check the box for **"Use your GitHub Pages website"** or paste your Vercel deployment URL into the **Website** field:
-   ```
-   https://your-portfolio-domain.vercel.app
-   ```
-4. Click **Save changes**. The live URL will now be pinned right at the top of your GitHub repository page!
-
----
 
 ## 👤 Author & Academic Attribution
 
